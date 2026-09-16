@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador PC Gamer</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Simulador PC Gamer</h1>
+    </header>
+
+    ```
+    <main>
+      <section>
+        <h2>Cadastre seu projeto de PC Gamer</h2>
+
+        <form
+          action="https://postman-echo.com/post"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <p>Preencha os dados do projeto para cadastrar seu PC.</p>
+
+          <fieldset>
+            <legend>Informações do PC</legend>
+
+            <div>
+              <label for="foto_id">Foto do PC:</label>
+              <input id="foto_id" name="foto" type="file" />
+            </div>
+
+            <div>
+              <label for="marca_id">Marca do gabinete:</label>
+              <input id="marca_id" name="marca" type="text" required />
+            </div>
+
+            <div>
+              <label for="modelo_id">Modelo do gabinete:</label>
+              <input
+                id="modelo_id"
+                name="modelo"
+                type="text"
+                placeholder="Ex.: Corsair 4000D"
+              />
+            </div>
+
+            <div>
+              <label for="ano_id">Ano de montagem:</label>
+              <input
+                id="ano_id"
+                name="ano"
+                type="number"
+                min="2000"
+                max="2100"
+              />
+            </div>
+
+            <div>
+              <label for="nome_id">Nome do projeto:</label>
+              <input
+                id="nome_id"
+                name="nome_projeto"
+                type="text"
+                placeholder="Ex.: Meu PC Gamer"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Configuração do PC</legend>
+
+            <div>
+              <label for="processador_id">Processador:</label>
+              <input
+                id="processador_id"
+                name="processador"
+                type="text"
+                placeholder="Ex.: Ryzen 7 7800X3D"
+              />
+            </div>
+
+            <div>
+              <label for="placavideo_id">Placa de vídeo:</label>
+              <input
+                id="placavideo_id"
+                name="placa_video"
+                type="text"
+                placeholder="Ex.: RTX 4070"
+              />
+            </div>
+
+            <div>
+              <label for="ram_id">Memória RAM:</label>
+              <select id="ram_id" name="ram">
+                <option value="8gb">8 GB</option>
+                <option value="16gb">16 GB</option>
+                <option value="32gb">32 GB</option>
+                <option value="64gb">64 GB</option>
+                <option value="128gb">128 GB</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="armazenamento_id">Armazenamento:</label>
+              <select id="armazenamento_id" name="armazenamento">
+                <option value="ssd_240">SSD 240 GB</option>
+                <option value="ssd_480">SSD 480 GB</option>
+                <option value="ssd_1tb">SSD 1 TB</option>
+                <option value="ssd_2tb">SSD 2 TB</option>
+                <option value="ssd_4tb">SSD 4 TB</option>
+              </select>
+            </div>
+
+            <div>
+              <label>Finalidade do PC:</label>
+
+              <div>
+                <input
+                  id="gaming_id"
+                  name="finalidade"
+                  type="radio"
+                  value="gaming"
+                />
+                <label for="gaming_id">Gaming</label>
+              </div>
+
+              <div>
+                <input
+                  id="trabalho_id"
+                  name="finalidade"
+                  type="radio"
+                  value="trabalho"
+                />
+                <label for="trabalho_id">Trabalho</label>
+              </div>
+
+              <div>
+                <input
+                  id="streaming_id"
+                  name="finalidade"
+                  type="radio"
+                  value="streaming"
+                />
+                <label for="streaming_id">Streaming</label>
+              </div>
+
+              <div>
+                <input
+                  id="edicao_id"
+                  name="finalidade"
+                  type="radio"
+                  value="edicao"
+                />
+                <label for="edicao_id">Edição de vídeo</label>
+              </div>
+            </div>
+
+            <div>
+              <input
+                id="watercooler_id"
+                name="acessorios"
+                type="checkbox"
+                value="watercooler"
+              />
+              <label for="watercooler_id">Water Cooler</label>
+            </div>
+
+            <div>
+              <input
+                id="rgb_id"
+                name="acessorios"
+                type="checkbox"
+                value="rgb"
+              />
+              <label for="rgb_id">Iluminação RGB</label>
+            </div>
+
+            <div>
+              <input
+                id="wifi_id"
+                name="acessorios"
+                type="checkbox"
+                value="wifi"
+              />
+              <label for="wifi_id">Wi-Fi integrado</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Localização</legend>
+
+            <div>
+              <label for="cidade_id">Cidade:</label>
+              <input id="cidade_id" name="cidade" type="text" />
+            </div>
+
+            <div>
+              <label for="estado_id">Estado:</label>
+              <input id="estado_id" name="estado" type="text" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Planejamento do projeto</legend>
+
+            <div>
+              <label for="orcamento_id">Orçamento estimado:</label>
+              <input
+                id="orcamento_id"
+                name="orcamento"
+                type="text"
+                placeholder="Ex.: R$ 5.000,00"
+              />
+            </div>
+
+            <div>
+              <label for="observacoes_id">Observações:</label>
+              <textarea
+                id="observacoes_id"
+                name="observacoes"
+                rows="6"
+                cols="50"
+                placeholder="Descreva detalhes ou componentes que deseja utilizar..."
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="reset">Limpar</button>
+            <button type="submit">Cadastrar Projeto</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Simulador PC Gamer.</p>
+    </footer>
+    ```
+  </body>
+</html>
