@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  color: #151515;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  opacity: 0.8;
+  font-size: o.8rem;
+  margin-top: 0.5rem;
+}
+section {
+  background-color: #050505;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid color silver;
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+.item {
+  color: white;
+  background-color: rgb(63, 64, 65);
+}
+.container-block .item {
+  display: block;
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+.container-inline .item {
+  display: inline;
+}
+.container-inline-block .item {
+  display: inline-block;
+  padding: 0.5rem;
+  width: 5rem;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.container-flex .item {
+  padding: 0.5rem;
+  flex-basis: 5.5rem;
+  flex-shrink: 0.5;
+  flex-grow: 0.5;
+}
+.container-grid {
+  background-color: rgba(100, 88, 63, 0.571);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  gap: 0.5rem;
+}
+.container-grid .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-grid-area {
+  display: grid;
+  grid-template-areas:
+    "cabecalho cabecalho"
+    "principal artigo"
+    "rodape rodape";
+  grid-template-columns: 3fr 1fr;
+  gap: 0.5rem;
+  height: 500px;
+  grid-template-rows: 1fr 4fr 0.5fr;
+}
+
+.container-grid-area .item-cabecalho {
+  grid-area: cabecalho;
+  background-color: rgb(200, 107, 26);
+}
+
+.container-grid-area .item-principal {
+  grid-area: principal;
+  background-color: rgb(223, 59, 13);
+}
+
+.container-grid-area .item-artigo {
+  grid-area: artigo;
+  background-color: rgb(226, 62, 7);
+}
+
+.container-grid-area .item-rodape {
+  grid-area: rodape;
+  background-color: rgb(243, 5, 5);
+}
